@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมปฐมพยาบาลเบื้องต้น</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 โปรแกรมปฐมพยาบาลเบื้องต้น 🏥</h1>
+        <p>เลือกอาการบาดเจ็บหรือเจ็บป่วยเพื่อดูคำแนะนำ</p>
+
+        <div class="selection-area">
+            <label for="conditionSelect">เลือกอาการ:</label>
+            <select id="conditionSelect">
+                <option value="">-- กรุณาเลือก --</option>
+                <option value="cut">บาดแผลเล็กน้อย (มีดบาด)</option>
+                <option value="burn">แผลไฟไหม้/น้ำร้อนลวก (ระดับ 1)</option>
+                <option value="fall">หกล้ม/เคล็ดขัดยอก</option>
+                <option value="insectBite">แมลงสัตว์กัดต่อย (ไม่รุนแรง)</option>
+                <option value="choking">สำลักอาหาร</option>
+                <option value="fainting">หมดสติ</option>
+                <option value="nosebleed">เลือดกำเดาไหล</option>
+                <option value="animalBite">สัตว์กัด </option>
+                <option value="poisoning">อาหารเป็นพิษ/สารพิษ</option>
+                <option value="hypoglycemia">ภาวะน้ำตาลในเลือดต่ำ (เบาหวาน)</option>
+                <option value="seizure">อาการชัก</option>
+                <option value="allergicReaction">อาการแพ้รุนแรง (Anaphylaxis)</option>
+            </select>
+        </div>
+
+        <div id="instructionArea" class="instruction-area">
+            <h2 id="instructionTitle"></h2>
+            <p id="instructionText"></p>
+            <img id="instructionImage" src="" alt="" style="display:none; max-width:100%; height:auto; border-radius: 8px; margin-top: 15px;">
+        </div>
+
+        <div class="emergency-button">
+            <p>หากอาการรุนแรง หรือไม่แน่ใจ ควรโทรขอความช่วยเหลือฉุกเฉิน:</p>
+            <a href="tel:1669" class="call-button">📞 โทร 1669 (แจ้งเหตุฉุกเฉิน)</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

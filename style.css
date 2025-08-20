@@ -1,0 +1,109 @@
+body {
+    font-family: 'Prompt', sans-serif; /* แนะนำให้ใช้ฟอนต์ Prompt เพื่อภาษาไทยที่สวยงาม */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* จัดชิดด้านบนเล็กน้อย */
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 0; /* เพิ่ม padding บนล่าง */
+    background-color: #e8f5e9; /* สีเขียวอ่อนสบายตา */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap'); */
+/* หากต้องการใช้ฟอนต์ Prompt ให้เพิ่มบรรทัดบนนี้ที่ด้านบนสุดของไฟล์ CSS แล้ว uncomment ออก */
+
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+    width: 90%; /* ทำให้ตอบสนองต่อขนาดหน้าจอ */
+}
+
+h1 {
+    color: #2e7d32; /* สีเขียวเข้ม */
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.selection-area {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+select {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    width: calc(100% - 20px); /* ให้เต็มความกว้าง */
+    max-width: 300px; /* จำกัดความกว้างสูงสุด */
+    box-sizing: border-box; /* รวม padding ในความกว้าง */
+    background-color: #f9f9f9;
+}
+
+.instruction-area {
+    background-color: #f1f8e9; /* สีเขียวอ่อนมาก */
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: left; /* จัดข้อความชิดซ้าย */
+    border: 1px dashed #a5d6a7;
+    min-height: 150px; /* กำหนดความสูงขั้นต่ำ */
+}
+
+.instruction-area h2 {
+    color: #388e3c;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.instruction-area p {
+    color: #4CAF50; /* สีเขียวกลาง */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.emergency-button {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.emergency-button p {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: #ef5350; /* สีแดงสดใส */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
